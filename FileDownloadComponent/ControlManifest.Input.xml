@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="ZenIT" constructor="FileDownloadComponent" version="0.0.1" display-name-key="FileDownloadComponent" description-key="FileDownloadComponent description" control-type="standard">
+
+    <property name="xPrimaryColor" display-name-key="primaryColor_key" description-key="primaryColor_desc" of-type="SingleLine.Text" usage="input" required="false" />
+    <property name="xSecondaryColor" display-name-key="secondaryColor_key" description-key="secondaryColor_desc" of-type="SingleLine.Text" usage="input" required="false" />
+    <property name="xFontColor" display-name-key="fontColor_key" description-key="fontColor_desc" of-type="SingleLine.Text" usage="input" required="false" />
+    <property name="xFileName" display-name-key="filename_key" description-key="filename_desc" of-type="SingleLine.Text" usage="input" required="true" />
+    <property name="xContentType" display-name-key="contenttype_key" description-key="contenttype_desc" of-type="SingleLine.Text" usage="input" required="true" />
+    <property name="xFileContent" display-name-key="filecontent_key" description-key="filecontent_desc" of-type="Multiple" usage="input" required="true" />
+    <!-- 
+      Property node's of-type attribute can be of-type-group attribute. 
+      Example:
+      <type-group name="numbers">
+        <type>Whole.None</type>
+        <type>Currency</type>
+        <type>FP</type>
+        <type>Decimal</type>
+      </type-group>
+      <property name="sampleProperty" display-name-key="Property_Display_Key" description-key="Property_Desc_Key" of-type-group="numbers" usage="bound" required="true" />
+    -->
+    <resources>
+      <code path="index.ts" order="1"/>
+      <!-- UNCOMMENT TO ADD MORE RESOURCES -->
+      <css path="main.css" order="2" />
+      
+    </resources>
+    <!-- UNCOMMENT TO ENABLE THE SPECIFIED API
+    <feature-usage>
+      <uses-feature name="Device.captureAudio" required="true" />
+      <uses-feature name="Device.captureImage" required="true" />
+      <uses-feature name="Device.captureVideo" required="true" />
+      <uses-feature name="Device.getBarcodeValue" required="true" />
+      <uses-feature name="Device.getCurrentPosition" required="true" />
+      <uses-feature name="Device.pickFile" required="true" />
+      <uses-feature name="Utility" required="true" />
+      <uses-feature name="WebAPI" required="true" />
+    </feature-usage>
+    -->
+  </control>
+</manifest>

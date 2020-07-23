@@ -1,0 +1,7 @@
+.downloadButton {
+    min-height: 2.3em;
+    border: none;
+    padding: 1em;
+    margin: .5em auto;
+    cursor: pointer;
+}
